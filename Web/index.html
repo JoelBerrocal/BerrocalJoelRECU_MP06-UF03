@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/comptador.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/cookies.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function () {
+            $('#myModal').modal('toggle')});
+    </script>
+</head>
+
+<div class="text-center">
+    <a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
+</div>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade bg-success">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title bg">Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" name="username" placeholder="Usuari"
+                                required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="text" class="form-control" name="password" placeholder="Contrasenya"
+                                required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg bg-success">Sign In</button>
+                    </div>
+                    <p class="hint-text"><a href="#">Has oblidat la teva contrasenya?</a></p>
+                </form>
+            </div>
+            <div class="modal-footer">No tens un compte? <a href="#">Crea un</a></div>
+        </div>
+    </div>
+</div>
+<nav>
+    <div class="vertical-nav bg-white" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-light">
+            <div><img src="img/logo.jpg" alt="..." width="230px"> </div>
+        </div>
+
+        <p class="text-dark font-weight-bold text-uppercase px-3 small pb-4 mb-0">Portfoli</p>
+        <a href="index.html" class="text-dark font-weight-bold text-uppercase px-3 small py-1 mb-0">Els meus
+            treballs</a><br>
+
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="primertrimestre.html" class="nav-link text-dark font-italic bg-light">
+                    <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                    Primer Trimestre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="segontrimestre.html" class="nav-link text-dark font-italic bg-light">
+                    <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                    Segon Trimestre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="tercertrimestre.html" class="nav-link text-dark font-italic bg-light">
+                    <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                    Tercer Trimestre
+                </a>
+            </li>
+
+        </ul><br>
+
+        <p class="text-dark font-weight-bold text-uppercase px-3 small py-1 mb-0">Desenvolupadors</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                    Joel Berrocal Urbina
+                </a>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-content p-5" id="content">
+    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i
+            class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">
+            <- Veure menys / Veure més ->
+        </small></button>
+
+
+    <body>
+        <div style="text-align: center;font-family: Calibri,Arial;">
+            <h1>EL MEU PORTFOLI</h1>
+            <p>JOEL BERROCAL URBINA</p>
+            <MARQUEE> Aquí podràs veure tots els meus treballs </MARQUEE>
+
+            <!-- Ventana modal cookies-->
+            <a href="#modal" role="button" class="btn btn-large btn-success" data-toggle="modal">Cookies</a>
+
+            <!-- Modal / Ventana / Overlay en HTML -->
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">¿Estás seguro?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>¿Seguro que quieres aceptar las cookies de este lugar?</p>
+                            <a href="cookies.html">
+                                <p class="text-primary"><small>Más informacion.</small></p>
+                            </a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div style="background-color: white; " class="container">
+            <h3 class="tcategories" style="color: black;text-align: center;  font-size: 25px;padding-bottom: 20px;">
+                Treballs:
+            </h3>
+            <div style="text-align: center;padding-bottom: 20px;" class="row">
+                <div class="col">
+                    <h4>Primer Trimestre</h4>
+                    <a href="Activitats/Activitat4 (guia portfoli).rar" download>Activitat 2</a>
+                    <a href="Activitats/Activitat3.rar" download>Activitat 3</a>
+                    <a href="Activitats/Activitat5 (politica.privacitat).rar" download>Activitat 4</a>
+                </div>
+                <div class="col">
+                    <h4>Segon Trimestre</h4>
+                </div>
+                <div class="col">
+                    <h4>Tercer Trimestre</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div style=margin-top:355px;>
+                Joel Berrocal Urbina © 2020 Copyright:
+                <a class="text-dark" href="">https://jowysites.000webhostapp.com/</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+
+
+
+
+    <div id="overbox3">
+        <div id="infobox3">
+            <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas
+                navegando consideramos que aceptas su uso.
+                <a href="politicaprivacidad.html">Más información</a>
+                <a onclick="aceptar_cookies();" style="cursor:pointer;">X Cerrar</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/comptador.js"></script>
+
+</html>
